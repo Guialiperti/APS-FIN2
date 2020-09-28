@@ -7,7 +7,7 @@ from pypfopt import CLA
 
 
 # Read in price data
-df = pd.read_csv("portfolio1-guiNick.csv", parse_dates=True, index_col="data")
+df = pd.read_csv("dados/grupo1.csv", parse_dates=True, index_col="Data")
 
 # Calculate expected returns and sample covariance
 mu = expected_returns.mean_historical_return(df, frequency= 12)
